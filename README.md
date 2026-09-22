@@ -24,22 +24,22 @@ témoin). La décision d'investissement publicitaire en dépend.
 
 ## Démarche
 
-**1 — Cadrage.** H₀ : les deux vrais taux de conversion sont égaux (la pub ne fait
+**1 - Cadrage.** H₀ : les deux vrais taux de conversion sont égaux (la pub ne fait
 rien). H₁ : ils diffèrent. Métrique : taux de conversion (moyenne de `converted`).
 Seuil α = 0,05, test bilatéral.
 
-**2 — Validation des données.** Trois contrôles avant tout test : aucune valeur
+**2 - Validation des données.** Trois contrôles avant tout test : aucune valeur
 manquante ; répartition 96 % / 4 % (déséquilibre voulu, pas de *Sample Ratio
 Mismatch* suspect) ; zéro doublon d'utilisateur (personne n'est dans les deux
 groupes).
 
-**3 — Test principal.** Métrique binaire → comparaison de deux proportions
+**3 - Test principal.** Métrique binaire → comparaison de deux proportions
 (*two-proportion z-test*, `statsmodels`).
 
-**4 — Segmentation.** Analyse jour par jour puis heure par heure, en corrigeant le
+**4 - Segmentation.** Analyse jour par jour puis heure par heure, en corrigeant le
 risque de faux positifs lié aux comparaisons multiples (**correction de Bonferroni**).
 
-**5 — Visualisation & recommandation.**
+**5 - Visualisation & recommandation.**
 
 ## Résultats
 
